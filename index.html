@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="favicon.ico"/>
+    <title>Happy Vietnamese woman's day</title>
+</head>
+<script language=JavaScript>
+    var message="Do not view source please";
+    function clickIE() {if (document.all) {(message);return false;}}
+    function clickNS(e) {if
+    (document.layers||(document.getElementById&&!document.all)) {
+    if (e.which==2||e.which==3) {(message);return false;}}}
+    if (document.layers)
+    {document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+    else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+    document.oncontextmenu=new Function("return false")
+</script>
+<style>
+    body{
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    #myVideo{
+        display: block;
+        margin: auto;
+    }
+
+    @media screen and (max-width: 600px) {
+        #myVideo{
+            width: 100%;
+            display: block;
+            margin: auto;
+        }
+    }
+
+
+</style>
+
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source id="myVideo" src="ngan.mp4" type="video/mp4">
+    </video>
+        <div id="buttonclick">
+    </div>
+
+</body>
+</html>
