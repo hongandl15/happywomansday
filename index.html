@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="favicon.png"/>
+    <link rel="icon" type="image/png" href="./favicon.png"/>
     <title>Happy Vietnamese woman's day</title>
 </head>
 <script language=JavaScript>
@@ -35,18 +35,23 @@
 
 
 </style>
+<script>
+    audioElement.play();
+</script>
 
 
 <body onkeydown="return false">
         <div style="position: absolute; top:0">
-            <!-- <div><audio src="music.mp3" playsinline autoplay loop></audio></div> -->
-            <video autoplay loop playsinline id="myVideo">
-                <source id="myVideo" src="ngan.mp4" type="video/mp4">d
+            <div><audio playsinline autoplay loop>
+                <source src="music.mp3">
+            </audio></div>
+            <video autoplay muted loop playsinline id="myVideo">
+                <source id="myVideo" src="ngan.mp4" type="video/mp4">
             </video>
         </div>
 
 
-        <!-- <embed src="music.mp3" autostart=true loop=true> -->
+        <embed src="./music.mp3" autostart=true loop=true>
 
 </div>
 
